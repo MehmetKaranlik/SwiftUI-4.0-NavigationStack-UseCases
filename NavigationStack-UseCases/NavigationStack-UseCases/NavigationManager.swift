@@ -12,6 +12,10 @@ class NavigationManager: ObservableObject, NavigationManagerDelegate {
       self.routes.removeAll()
    }
 
+   func pop() {
+      self.routes.removeLast()
+   }
+
    func popUntil(_ targetRoute: NavigationPaths) {
       if self.routes.last != targetRoute {
          self.routes.removeLast()

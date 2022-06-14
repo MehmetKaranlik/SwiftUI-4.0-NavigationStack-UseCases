@@ -11,6 +11,7 @@ protocol NavigationManagerDelegate {
    associatedtype Route = NavigationPaths
    func pushView(_ newView : Route)
    func popToRoot()
+   func pop()
    func popUntil (_ targetRoute : Route)
 
 }
