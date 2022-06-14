@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct NavigationStack_UseCasesApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+              TabCase()
         }
     }
 }
