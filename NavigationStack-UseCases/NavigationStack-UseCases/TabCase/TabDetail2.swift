@@ -16,7 +16,7 @@ struct TabDetail2: View {
                 manager.pushView(.tabDetail4)
              }
           }
-          .routeIterator(cases: NavigationPaths.allCases)
+          .routeIterator()
        }
 
     }

@@ -23,7 +23,7 @@ struct Navigator<Content: View>: View {
 
 
 extension View {
-   func routeIterator(cases: [NavigationPaths]) -> some View {
+   func routeIterator() -> some View {
       self.navigationDestination(for: NavigationPaths.self) { path in
          Routes.routerReturner(path: path)
       }
