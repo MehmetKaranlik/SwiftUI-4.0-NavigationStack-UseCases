@@ -107,7 +107,7 @@ struct Navigator<Content: View>: View {
 
 
 extension View {
-   func routeIterator(cases: [NavigationPaths]) -> some View {
+   func routeIterator() -> some View {
       self.navigationDestination(for: NavigationPaths.self) { path in
          Routes.routerReturner(path: path)
       }
@@ -127,7 +127,7 @@ struct TabDetail1: View {
                manager.pushView(.tabDetail3)
             }
          }
-         .routeIterator(cases: NavigationPaths.allCases)
+         .routeIterator()
       }
    }
 }
